@@ -1,4 +1,4 @@
-import S from './Inicio.module.scss'
+import S from './inicio.module.scss'
 import balança from '../../assets/balança.png'
 import ler from '../../assets/ler.png'
 import mao from '../../assets/mao.png'
