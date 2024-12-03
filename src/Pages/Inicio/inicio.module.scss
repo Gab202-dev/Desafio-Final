@@ -2,7 +2,7 @@
 .post{
     background-image: url('../../assets/banner.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 87vh;
     align-items: center;
@@ -50,6 +50,66 @@
         border-radius: 10px;
         p{
             text-align: center;
+            font-size: 1.2vw;
         }
+    }
+}
+
+@media(max-width: 780px){
+    .post{
+        justify-content: center;
+        h2{
+            border: solid 2px red;
+            width: 80%;
+            margin-left: 0;
+            display: flex;
+            text-align: center;
+
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .boxCard{
+     article{
+        p{
+            font-size: 2.3vw;
+        }
+     }
+    }
+}
+
+
+@media(max-width: 780px){
+    .devoDoar{
+        border: solid 2px green;
+        height: auto; 
+        div{
+            border: solid 2px red;
+            justify-content: center;
+            h2{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .boxCard{
+        border: solid 2px yellow;
+        height: 120vh;
+        flex-wrap: wrap;
+        gap: 20px;
+        article{
+            width: 220px;
+            height: 38vh;
+            p{
+                font-size: 16;
+            }
+        }
+    }
+}
+
+@media(max-width: 467px){
+    .devoDoar{
+        height: 188vh ;
     }
 }

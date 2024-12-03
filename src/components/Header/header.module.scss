@@ -11,8 +11,8 @@ header{
 }
 
 .boxLogo{
-    // border: solid 2px yellow;
-    width: 23vw;
+    
+    width: 24vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -50,9 +50,68 @@ header{
         background-color: transparent;
         border: none;
         color: white;
+        padding-left: 6px;
+        width: 10vw;
         font-size: 15px;
         &::placeholder{
             color: white;
         }
+    }
+}
+
+
+@media(max-width: 1071px){
+
+    .boxLogo{
+        width: 25vw;
+        // border: solid 2px red;
+        h1{
+            font-size: 2vw;
+        }
+        img{
+            width: 5vw;
+        }
+    }
+    .boxInput{
+       input{
+        &::placeholder{
+            font-size: 1.1px;
+        }
+       }
+    }
+
+    .boxMenu{
+    //  border: solid 2px yellow;
+     width: 40vw;
+     ul{
+        font-size: 1.4vw;
+     }
+
+    }
+
+}
+
+@media(max-width: 780px){
+    header{
+        flex-direction: column;
+        height: 30vh;
+        justify-content: space-evenly;
+    }
+    .boxInput{
+        display: none;
+    }
+
+    .boxLogo{
+        width: 80%;
+        h1{
+            font-size: 25px;
+        }
+        img{
+            width: 70px;
+        }
+    }
+
+    .boxMenu{
+        width: 100%;
     }
 }

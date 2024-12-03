@@ -28,4 +28,28 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+} 
+
+@media(max-width: 1000px){
+    .boxSocial{
+        nav{
+            border: solid 2px red;
+            width: 230px;
+        }
+    }
 }
+
+@media(max-width: 467px){
+    .boxSocial{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    .boxEnd{
+        p{
+            font-size: 1.5vh;
+        }
+    }
+} 
+
