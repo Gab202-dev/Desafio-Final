@@ -59,7 +59,7 @@
     .post{
         justify-content: center;
         h2{
-            border: solid 2px red;
+            
             width: 80%;
             margin-left: 0;
             display: flex;
@@ -82,10 +82,10 @@
 
 @media(max-width: 780px){
     .devoDoar{
-        border: solid 2px green;
+        // border: solid 2px green;
         height: auto; 
         div{
-            border: solid 2px red;
+            // border: solid 2px red;
             justify-content: center;
             h2{
                 margin-left: 0;
@@ -94,7 +94,7 @@
     }
 
     .boxCard{
-        border: solid 2px yellow;
+        // border: solid 2px yellow;
         height: 120vh;
         flex-wrap: wrap;
         gap: 20px;
@@ -102,7 +102,7 @@
             width: 220px;
             height: 38vh;
             p{
-                font-size: 16;
+                font-size: 14;
             }
         }
     }
@@ -110,6 +110,6 @@
 
 @media(max-width: 467px){
     .devoDoar{
-        height: 188vh ;
+        height: 190vh ;
     }
 }

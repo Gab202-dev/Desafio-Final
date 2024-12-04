@@ -1,6 +1,6 @@
 .boxDoados{
 height: 70vh;
-border: solid 2px red;
+// border: solid 2px red;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -15,10 +15,11 @@ justify-content: space-evenly;
 width: 85vw;
 height: 60vh;
 display: flex;
-flex-direction: column;
-align-items: center;
+justify-content: space-evenly;
+// flex-direction: column;
+// align-items: center;
 article{
-    // border: solid 2px #005695;
+    border: solid 2px #005695;
     width: 15vw;
     height: 32vh;
     display: flex;
@@ -27,4 +28,30 @@ article{
     justify-content: space-evenly;
     border-radius: 15px;
 }
+}
+
+@media(max-width: 1000px){
+    .boxDoados{
+        justify-content: space-around;
+        
+    }
+
+    .boxbooks{
+        
+        article{
+            width: 200px;
+            height: 230px;
+        }
+    }
+}
+
+@media(max-width: 520px){
+    .boxbooks{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .boxDoados{
+        height: auto;
+    }
 }
